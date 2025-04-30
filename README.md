@@ -1,9 +1,9 @@
->  **从零学golang全集** | 🔍**最值得学习的Go项目集合** | 🎯 **企业级代码规范** | 🚀 **附多课网深度解析教程**  
->
+# **从零学golang全集** | 🔍**最值得学习的Go项目集合** | 🎯 **企业级代码规范** | 🚀 **附多课网深度解析教程**  
+
 >  本仓库精选**生产环境验证**的Go项目，每个项目提供：  
 >
 >  - ✅ 可运行的**完整代码**（非Demo片段）  
->  - 📚 配套[视频教程](https://duoke360.com/tutorial/path/golang)与**设计文档**  
+>  - 📚 配套[视频教程]([https://www.duoke360.com/go](https://duoke360.com/tutorial/path/golang))与**设计文档**  
 >  - 💡 行业应用场景分析（如高并发/区块链等）  
 
 
@@ -2932,3 +2932,451 @@ cli, err := clientv3.New(clientv3.Config{
     ▶ 掌握服务调用方法 → 学习使用 ProtocolBuffer 进行通信 → 配置文件管理
 3. **进阶阶段**
     ▶ 批量启动多个服务进行服务发现测试 → 与 Gin 集成 → 优化微服务架
+
+
+
+# Go-kit 微服务框架教程
+
+## 一、🔍 Go-kit 基础知识
+
+| 教程内容                 | 简要说明                           | 链接                                                         |
+| ------------------------ | ---------------------------------- | ------------------------------------------------------------ |
+| Go-kit 简介              | 介绍 Go-kit 微服务框架及其核心概念 | [go kit简介](https://duoke360.com/tutorial/go-kit/k1)        |
+| 第一个 Go-kit 应用       | 从零开始构建第一个 Go-kit 应用     | [第一个go kit应用](https://duoke360.com/tutorial/go-kit/k2)  |
+| Go-kit 基本概念          | 讲解 Go-kit 的基本概念与模块设计   | [go kit基本概念](https://duoke360.com/tutorial/go-kit/k3)    |
+| Go-kit Endpoints         | 介绍 Go-kit 中的 Endpoints 概念    | [go kit Endpoints](https://duoke360.com/tutorial/go-kit/k4)  |
+| Go-kit Endpoint 定义     | 如何定义 Go-kit 中的 Endpoints     | [go kit Endpoint 定义](https://duoke360.com/tutorial/go-kit/k5) |
+| Go-kit Endpoint 函数签名 | Go-kit 中 Endpoint 的函数签名定义  | [go kit Endpoint 函数签名](https://duoke360.com/tutorial/go-kit/k6) |
+
+------
+
+## 二、⚙️ Go-kit 高级应用
+
+| 教程内容                       | 简要说明                               | 链接                                                         |
+| ------------------------------ | -------------------------------------- | ------------------------------------------------------------ |
+| Go-kit Endpoint 链式操作       | 如何在 Go-kit 中进行 Endpoint 链式操作 | [go kit Endpoint 链式操作](https://duoke360.com/tutorial/go-kit/k7) |
+| Go-kit Endpoint 请求和响应转换 | 介绍如何在 Go-kit 中转换请求和响应     | [go kit Endpoint 请求和响应转换](https://duoke360.com/tutorial/go-kit/k8) |
+| Go-kit Endpoint 中间件         | Go-kit 中间件的使用方法与应用场景      | [go kit Endpoint 中间件](https://duoke360.com/tutorial/go-kit/k9) |
+| Go-kit Endpoint 错误处理       | 如何在 Go-kit 中进行错误处理           | [go kit Endpoint 错误处理](https://duoke360.com/tutorial/go-kit/k10) |
+| Go-kit 传输层                  | Go-kit 中的传输层设计与实现            | [go kit 传输层](https://duoke360.com/tutorial/go-kit/k11)    |
+| Go-kit HTTP 传输层             | 介绍 Go-kit 中的 HTTP 传输层实现       | [go kit HTTP 传输层](https://duoke360.com/tutorial/go-kit/k12) |
+| Go-kit gRPC 传输层             | Go-kit 中 gRPC 传输层的实现            | [go kit gRPC 传输层](https://duoke360.com/tutorial/go-kit/k13) |
+
+------
+
+## 三、🔁 Go-kit 微服务组件
+
+| 教程内容        | 简要说明                         | 链接                                                       |
+| --------------- | -------------------------------- | ---------------------------------------------------------- |
+| Go-kit 服务发现 | Go-kit 中的服务发现机制          | [go kit服务发现](https://duoke360.com/tutorial/go-kit/k14) |
+| Go-kit 负载均衡 | 介绍如何在 Go-kit 中实现负载均衡 | [go kit负载均衡](https://duoke360.com/tutorial/go-kit/k15) |
+| Go-kit 编码器   | Go-kit 中的请求/响应编码器使用   | [go kit编码器](https://duoke360.com/tutorial/go-kit/k16)   |
+| Go-kit 解码器   | Go-kit 中的请求/响应解码器使用   | [go kit解码器](https://duoke360.com/tutorial/go-kit/k17)   |
+| Go-kit 限流     | Go-kit 中实现限流的方式          | [go kit限流](https://duoke360.com/tutorial/go-kit/k18)     |
+| Go-kit 超时控制 | Go-kit 中超时控制的配置与实现    | [go kit超时控制](https://duoke360.com/tutorial/go-kit/k19) |
+| Go-kit 请求重试 | 介绍 Go-kit 中如何进行请求重试   | [go kit请求重试](https://duoke360.com/tutorial/go-kit/k20) |
+| Go-kit 熔断器   | Go-kit 中熔断器的实现与应用      | [go kit熔断器](https://duoke360.com/tutorial/go-kit/k21)   |
+
+------
+
+## 四、🔧 Go-kit 部署与监控
+
+| 教程内容                 | 简要说明                               | 链接                                                         |
+| ------------------------ | -------------------------------------- | ------------------------------------------------------------ |
+| Go-kit 上下文传递        | Go-kit 中的上下文传递机制与应用        | [go kit上下文传递](https://duoke360.com/tutorial/go-kit/k22) |
+| Go-kit 部署到 Kubernetes | 如何将 Go-kit 应用部署到 Kubernetes 上 | [go kit部署到k8s](https://duoke360.com/tutorial/go-kit/k23)  |
+| Go-kit 分布式追踪与监控  | 介绍 Go-kit 中如何实现分布式追踪与监控 | [go kit分布式追踪与监控](https://duoke360.com/tutorial/go-kit/k24) |
+
+------
+
+## 📚 推荐学习路径
+
+1. **基础阶段**
+    ▶ 了解 Go-kit 的基本概念与架构 → 实现第一个 Go-kit 应用 → 学习 Endpoints 和传输层
+2. **高级应用阶段**
+    ▶ 掌握 Endpoint 链式操作、请求与响应转换 → 实现中间件与错误处理 → 深入学习服务发现与负载均衡
+3. **部署与监控阶段**
+    ▶ 学习上下文传递与 Kubernetes 部署 → 掌握分布式追踪与监控
+
+
+
+# Git版本控制教程
+
+## 一、🔰 Git入门
+
+| 教程内容          | 简要说明                                      | 链接                                                         |
+| ----------------- | --------------------------------------------- | ------------------------------------------------------------ |
+| Git简介           | 介绍 Git 的基本概念和特点                     | [Git简介](https://duoke360.com/tutorial/git/git-intro)       |
+| Git的安装和配置   | 如何安装和配置 Git                            | [Git的安装和配置](https://duoke360.com/tutorial/git/git-setup) |
+| Git的四个工作区域 | 解释 Git 的工作区、暂存区、版本库等区域       | [Git的四个工作区域](https://duoke360.com/tutorial/git/workspace) |
+| Git文件的四种状态 | 讲解 Git 文件的不同状态（如未跟踪、已修改等） | [Git文件的四种状态](https://duoke360.com/tutorial/git/git-state) |
+
+------
+
+## 二、💻 Git常用命令
+
+| 教程内容              | 简要说明                                  | 链接                                                         |
+| --------------------- | ----------------------------------------- | ------------------------------------------------------------ |
+| Git常用命令           | 常见的 Git 操作命令和它们的用法           | [Git常用命令](https://duoke360.com/tutorial/git/git-command) |
+| Git配置用户签名       | 配置 Git 的用户信息，确保提交有明确的作者 | [Git配置用户签名](https://duoke360.com/tutorial/git/git-config-user) |
+| Git初始化本地库       | 创建一个新的 Git 仓库并初始化             | [Git初始化本地库](https://duoke360.com/tutorial/git/git-init) |
+| 查看Git状态           | 查看 Git 仓库当前的状态                   | [查看Git状态](https://duoke360.com/tutorial/git/git-status)  |
+| Git将代码添加到暂存区 | 将文件添加到 Git 暂存区                   | [Git将代码添加到暂存区](https://duoke360.com/tutorial/git/git-add) |
+| Git提交代码           | 提交更改到本地仓库                        | [Git提交代码](https://duoke360.com/tutorial/git/git-commit)  |
+| Git修改并提交代码     | 修改代码后提交并更新 Git 状态             | [Git修改并提交代码](https://duoke360.com/tutorial/git/git-modify-commit-code) |
+| Git项目版本切换       | 如何切换不同的版本或者分支                | [Git项目版本切换](https://duoke360.com/tutorial/git/git-reset) |
+
+------
+
+## 三、🔀 Git分支操作
+
+| 教程内容            | 简要说明                                   | 链接                                                         |
+| ------------------- | ------------------------------------------ | ------------------------------------------------------------ |
+| Git分支简介         | 介绍 Git 中的分支概念                      | [Git分支简介](https://duoke360.com/tutorial/git/git-branch-intro) |
+| Git分支常用命令     | 分支操作命令的用法，例如创建、删除、切换等 | [Git分支常用命令](https://duoke360.com/tutorial/git/git-branch-command) |
+| Git合并分支         | 讲解如何合并不同分支的代码                 | [Git合并分支](https://duoke360.com/tutorial/git/git-branch-merge) |
+| 解决Git合并分支冲突 | 如何解决 Git 合并时的冲突                  | [解决Git合并分支冲突](https://duoke360.com/tutorial/git/git-branch-fix) |
+
+------
+
+## 四、🌐 GitHub操作
+
+| 教程内容         | 简要说明                           | 链接                                                         |
+| ---------------- | ---------------------------------- | ------------------------------------------------------------ |
+| Git团队协作      | Git 团队协作和工作流程             | [Git团队协作](https://duoke360.com/tutorial/git/git-group)   |
+| GitHub创建远程库 | 在 GitHub 上创建一个远程仓库       | [GitHub创建远程库](https://duoke360.com/tutorial/git/git-remote-repo) |
+| GitHub推送本地库 | 将本地 Git 仓库推送到 GitHub       | [GitHub推送本地库](https://duoke360.com/tutorial/git/git-push) |
+| GitHub拉取远程库 | 从 GitHub 拉取远程仓库代码到本地   | [GitHub拉取远程库](https://duoke360.com/tutorial/git/git-pull) |
+| GitHub克隆远程库 | 克隆一个远程 GitHub 仓库到本地     | [GitHub克隆远程库](https://duoke360.com/tutorial/git/git-clone) |
+| GitHub团队内协作 | 讲解如何在 GitHub 上进行团队内协作 | [GitHub团队内协作](https://duoke360.com/tutorial/git/git-in-group) |
+| GitHub跨团队协作 | GitHub 中跨团队的协作方式          | [GitHub跨团队协作](https://duoke360.com/tutorial/git/git-group-group) |
+| GitHub免密登录   | 配置 GitHub 免密登录               | [GitHub免密登录](https://duoke360.com/tutorial/git/git-no-pwd) |
+
+------
+
+## 五、🖥️ IDE集成Git
+
+| 教程内容                      | 简要说明                            | 链接                                                         |
+| ----------------------------- | ----------------------------------- | ------------------------------------------------------------ |
+| 配置Git忽略文件               | 配置 Git 忽略文件规则               | [配置Git忽略文件](https://duoke360.com/tutorial/git/git-ignore-file) |
+| IDEA集成Git初始化本地库       | 在 IDEA 中初始化一个 Git 本地仓库   | [IDEA集成Git初始化本地库](https://duoke360.com/tutorial/git/ide-git-init-local-repo) |
+| IDEA集成Git切换版本           | 在 IDEA 中切换 Git 版本或分支       | [IDEA集成Git切换版本](https://duoke360.com/tutorial/git/idea-git-switch-version) |
+| IDEA集成Git创建和切换分支     | 在 IDEA 中创建并切换 Git 分支       | [IDEA集成Git创建和切换分支](https://duoke360.com/tutorial/git/idea-swtich-branch) |
+| IDEA集成Git合并分支           | 在 IDEA 中合并 Git 分支             | [IDEA集成Git合并分支](https://duoke360.com/tutorial/git/idea-merge-branch) |
+| IDEA集成Git合并分支并解决冲突 | 在 IDEA 中解决 Git 合并分支时的冲突 | [IDEA集成Git合并分支并解决冲突](https://duoke360.com/tutorial/git/idea-git-fix) |
+
+------
+
+## 六、🌐 其他平台集成Git
+
+| 教程内容           | 简要说明                          | 链接                                                         |
+| ------------------ | --------------------------------- | ------------------------------------------------------------ |
+| 码云Gitee简介      | 介绍码云（Gitee）的基本使用和操作 | [码云Gitee简介](https://duoke360.com/tutorial/git/gitee-intro) |
+| IDEA集成码云Gitee  | 在 IDEA 中集成码云 Gitee          | [IDEA集成码云Gitee](https://duoke360.com/tutorial/git/idea-gitee) |
+| GitLab简介         | 介绍 GitLab 平台的功能与应用      | [GitLab简介](https://duoke360.com/tutorial/git/gitlab-intro) |
+| GitLab安装与初始化 | 如何安装并初始化 GitLab 本地环境  | [GitLab安装与初始化](https://duoke360.com/tutorial/git/gitlab-install) |
+| IDEA集成GitLab     | 在 IDEA 中集成 GitLab 进行操作    | [IDEA集成GitLab](https://duoke360.com/tutorial/git/idea-gitlab) |
+
+------
+
+## 📚 推荐学习路径
+
+1. **基础阶段**
+    ▶ 了解 Git 的基本概念 → 学习 Git 的安装、配置及四个工作区域 → 掌握常用命令的使用
+2. **分支管理阶段**
+    ▶ 掌握 Git 分支管理的常用命令和合并操作 → 学习分支冲突的解决
+3. **协作与平台阶段**
+    ▶ 学习 GitHub、GitLab 的远程操作及团队协作 → 掌握在不同平台上的 Git 操作
+4. **IDE集成阶段**
+    ▶ 学习如何在 IDEA 中配置和使用 Git → 掌握在 IDEA 中进行 Git 操作
+
+
+
+# 🏆 Golang 企业面试题汇总
+
+------
+
+## 一、🔰 基础
+
+| 面试题                                              | 简要说明                 | 链接                                               |
+| --------------------------------------------------- | ------------------------ | -------------------------------------------------- |
+| Golang 有哪些优势？                                 | 面试常见开篇问题         | [q1](https://duoke360.com/tutorial/interview/q1)   |
+| Golang 数据类型有哪些                               | 基本类型答题要点         | [q2](https://duoke360.com/tutorial/interview/q2)   |
+| Golang 中的包如何使用                               | 包管理与导入方法         | [q3](https://duoke360.com/tutorial/interview/q3)   |
+| Go 支持什么形式的类型转换？                         | 强制与隐式转换要点       | [q4](https://duoke360.com/tutorial/interview/q4)   |
+| 什么是 Goroutine？你如何停止它？                    | 并发基础与停用机制       | [q5](https://duoke360.com/tutorial/interview/q5)   |
+| 如何在运行时检查变量类型？                          | reflect 使用场景         | [q6](https://duoke360.com/tutorial/interview/q6)   |
+| Go 两个接口之间可以存在什么关系？                   | 接口继承与组合           | [q7](https://duoke360.com/tutorial/interview/q7)   |
+| Go 当中同步锁有什么特点？作用是什么                 | sync.Mutex 原理          | [q8](https://duoke360.com/tutorial/interview/q8)   |
+| Go 语言中 Channel（通道）有什么特点，需要注意什么？ | 通道特性与阻塞行为       | [q9](https://duoke360.com/tutorial/interview/q9)   |
+| Go 语言中 Channel 缓冲有什么特点？                  | 有缓冲 vs 无缓冲         | [q10](https://duoke360.com/tutorial/interview/q10) |
+| Go 语言中 cap 函数可以作用于哪些内容？              | cap 用法总结             | [q11](https://duoke360.com/tutorial/interview/q11) |
+| Go Convey 是什么？一般用来做什么？                  | 测试框架简介             | [q12](https://duoke360.com/tutorial/interview/q12) |
+| Go 语言中 new 的作用是什么？                        | 内存分配区别             | [q13](https://duoke360.com/tutorial/interview/q13) |
+| Go 语言中 make 的作用是什么？                       | slice/map/channel 初始化 | [q14](https://duoke360.com/tutorial/interview/q14) |
+| Printf()，Sprintf()，Fprintf() 有何不同？           | 格式化输出差异           | [q15](https://duoke360.com/tutorial/interview/q15) |
+| Go 语言中数组和切片的区别是什么？                   | 值 vs 引用语义           | [q16](https://duoke360.com/tutorial/interview/q16) |
+| 值传递和引用传递如何运用？有什么区别？              | 参数传递模型             | [q17](https://duoke360.com/tutorial/interview/q17) |
+| 数组和切片在传递时的区别是什么？                    | 传递行为对比             | [q18](https://duoke360.com/tutorial/interview/q18) |
+| Go 语言是如何实现切片扩容的？                       | 扩容机制详解             | [q19](https://duoke360.com/tutorial/interview/q19) |
+| defer 的执行顺序是什么？defer 的作用和特点是什么？  | 延迟调用原理             | [q20](https://duoke360.com/tutorial/interview/q20) |
+| Slice 的底层实现                                    | 三字段结构               | [q21](https://duoke360.com/tutorial/interview/q21) |
+| Slice 的扩容机制，有什么注意点？                    | 扩容策略                 | [q22](https://duoke360.com/tutorial/interview/q22) |
+| 扩容前后的 Slice 是否相同？                         | 内存地址变化             | [q23](https://duoke360.com/tutorial/interview/q23) |
+| 参数传递、引用类型                                  | 深入传递机制             | [q24](https://duoke360.com/tutorial/interview/q24) |
+| Map 底层实现                                        | Hash 表结构              | [q25](https://duoke360.com/tutorial/interview/q25) |
+| Map 如何扩容                                        | rehash 触发条件          | [q26](https://duoke360.com/tutorial/interview/q26) |
+| Map 查找                                            | 查找流程                 | [q27](https://duoke360.com/tutorial/interview/q27) |
+| 介绍一下 Channel                                    | 通道原理概览             | [q28](https://duoke360.com/tutorial/interview/q28) |
+| Channel 的 ring buffer 实现                         | 环形队列结构             | [q29](https://duoke360.com/tutorial/interview/q29) |
+| Go 方法与函数的区别？                               | 方法绑定 vs 独立函数     | [q30](https://duoke360.com/tutorial/interview/q30) |
+| 方法值接收者和指针接收者的区别？                    | 传值 vs 传引用           | [q31](https://duoke360.com/tutorial/interview/q31) |
+| 函数返回局部变量的指针是否安全？                    | 堆逃逸分析               | [q32](https://duoke360.com/tutorial/interview/q32) |
+| 函数参数传递到底是值传递还是引用传递？              | 统一值传递               | [q33](https://duoke360.com/tutorial/interview/q33) |
+| defer 关键字的实现原理？                            | 调度栈追踪               | [q34](https://duoke360.com/tutorial/interview/q34) |
+| 内置函数 make 和 new 的区别？                       | 初始化 vs 分配           | [q35](https://duoke360.com/tutorial/interview/q35) |
+| Slice 底层实现原理                                  | 内存布局详解             | [q36](https://duoke360.com/tutorial/interview/q36) |
+| array 和 slice 的区别？                             | 固定长度 vs 动态         | [q37](https://duoke360.com/tutorial/interview/q37) |
+| slice 深拷贝和浅拷贝                                | 数据共享 vs 复制         | [q38](https://duoke360.com/tutorial/interview/q38) |
+| slice 扩容机制？                                    | 扩容阈值与倍增规则       | [q39](https://duoke360.com/tutorial/interview/q39) |
+| slice 为什么不是线程安全的？                        | 并发冲突风险             | [q40](https://duoke360.com/tutorial/interview/q40) |
+| map 的底层实现原理                                  | bucket 与 overflow       | [q41](https://duoke360.com/tutorial/interview/q41) |
+| map 遍历为什么是无序的？                            | Hash 随机化              | [q42](https://duoke360.com/tutorial/interview/q42) |
+| map 为什么是非线程安全的？                          | 并发写入冲突             | [q43](https://duoke360.com/tutorial/interview/q43) |
+| map 如何查找？                                      | Hash 计算与定位          | [q44](https://duoke360.com/tutorial/interview/q44) |
+| map 冲突的解决方式？                                | 链地址法 / 开放地址      | [q45](https://duoke360.com/tutorial/interview/q45) |
+| map 的负载因子为什么是 6.5？                        | 负载因子原理             | [q46](https://duoke360.com/tutorial/interview/q46) |
+| map 如何扩容?                                       | 扩容触发与数据迁移       | [q47](https://duoke360.com/tutorial/interview/q47) |
+| map 和 sync.Map 谁的性能好，为什么？                | 并发优化对比             | [q48](https://duoke360.com/tutorial/interview/q48) |
+| channel 的底层实现原理？                            | 队列 + 锁机制            | [q49](https://duoke360.com/tutorial/interview/q49) |
+| channel 有什么特点？                                | 阻塞、同步特性           | [q50](https://duoke360.com/tutorial/interview/q50) |
+
+------
+
+## 二、🚀 高级
+
+| 面试题                                       | 简要说明              | 链接                                                 |
+| -------------------------------------------- | --------------------- | ---------------------------------------------------- |
+| Mutex 几种状态                               | 状态机模型            | [q52](https://duoke360.com/tutorial/interview/q52)   |
+| Mutex 正常模式和饥饿模式                     | 调度与切换策略        | [q53](https://duoke360.com/tutorial/interview/q53)   |
+| Mutex 允许自旋的条件                         | 自旋与挂起阈值        | [q54](https://duoke360.com/tutorial/interview/q54)   |
+| RWMutex 实现                                 | 读写锁原理            | [q55](https://duoke360.com/tutorial/interview/q55)   |
+| RWMutex 注意事项                             | 死锁与性能            | [q56](https://duoke360.com/tutorial/interview/q56)   |
+| Cond 是什么                                  | 条件变量概念          | [q57](https://duoke360.com/tutorial/interview/q57)   |
+| Broadcast 和 Signal 区别                     | 唤醒策略对比          | [q58](https://duoke360.com/tutorial/interview/q58)   |
+| Cond 中 Wait 使用                            | 等待与通知原理        | [q59](https://duoke360.com/tutorial/interview/q59)   |
+| WaitGroup 用法                               | 并发等待机制          | [q60](https://duoke360.com/tutorial/interview/q60)   |
+| WaitGroup 实现原理                           | 内部计数与唤醒        | [q61](https://duoke360.com/tutorial/interview/q61)   |
+| 什么是 sync.Once                             | 一次性初始化          | [q62](https://duoke360.com/tutorial/interview/q62)   |
+| 什么操作叫做原子操作                         | 原子性定义            | [q63](https://duoke360.com/tutorial/interview/q63)   |
+| 原子操作和锁的区别                           | 性能 vs 简单性        | [q64](https://duoke360.com/tutorial/interview/q64)   |
+| 什么是 CAS                                   | Compare-and-Swap 概念 | [q65](https://duoke360.com/tutorial/interview/q65)   |
+| sync.Pool 有什么用                           | 对象池优化            | [q66](https://duoke360.com/tutorial/interview/q66)   |
+| Goroutine 定义                               | 启动与调度            | [q67](https://duoke360.com/tutorial/interview/q67)   |
+| GMP 指的是什么                               | 调度模型组成          | [q68](https://duoke360.com/tutorial/interview/q68)   |
+| 1.0 之前 GM 调度模型                         | 演进历史              | [q69](https://duoke360.com/tutorial/interview/q69)   |
+| GMP 调度流程                                 | 调度步骤              | [q70](https://duoke360.com/tutorial/interview/q70)   |
+| GMP 中 work stealing 机制                    | 负载均衡策略          | [q71](https://duoke360.com/tutorial/interview/q71)   |
+| GMP 中 hand off 机制                         | 抢占调度              | [q72](https://duoke360.com/tutorial/interview/q72)   |
+| 协作式的抢占式调度                           | 用户态协作            | [q73](https://duoke360.com/tutorial/interview/q73)   |
+| 基于信号的抢占式调度                         | 强制抢占              | [q74](https://duoke360.com/tutorial/interview/q74)   |
+| GMP 调度过程中存在哪些阻塞                   | 阻塞点分析            | [q75](https://duoke360.com/tutorial/interview/q75)   |
+| Sysmon 有什么作用                            | 系统监控线程          | [q76](https://duoke360.com/tutorial/interview/q76)   |
+| 三色标记原理                                 | GC 标记算法           | [q77](https://duoke360.com/tutorial/interview/q77)   |
+| 写屏障                                       | 写屏障机制            | [q78](https://duoke360.com/tutorial/interview/q78)   |
+| 插入写屏障                                   | 插入细节              | [q79](https://duoke360.com/tutorial/interview/q79)   |
+| 删除写屏障                                   | 删除细节              | [q80](https://duoke360.com/tutorial/interview/q80)   |
+| 混合写屏障                                   | 混合模型              | [q81](https://duoke360.com/tutorial/interview/q81)   |
+| GC 触发时机                                  | 触发条件              | [q82](https://duoke360.com/tutorial/interview/q82)   |
+| Go 语言中 GC 的流程是什么？                  | GC 全流程             | [q83](https://duoke360.com/tutorial/interview/q83)   |
+| GC 如何调优                                  | 调优策略              | [q84](https://duoke360.com/tutorial/interview/q84)   |
+| Go channel 为什么是线程安全的？              | 并发安全保证          | [q85](https://duoke360.com/tutorial/interview/q85)   |
+| Go channel 如何控制 goroutine 并发执行顺序？ | 同步序列管理          | [q86](https://duoke360.com/tutorial/interview/q86)   |
+| Go channel 共享内存有什么优劣势？            | 共享 vs 消息传递      | [q87](https://duoke360.com/tutorial/interview/q87)   |
+| Go channel 发送接收时会死锁的场景？          | 死锁触发条件          | [q88](https://duoke360.com/tutorial/interview/q88)   |
+| Go channel 有无缓冲的区别？                  | 缓冲与阻塞            | [q89](https://duoke360.com/tutorial/interview/q89)   |
+| Go 互斥锁的实现原理？                        | 底层状态机            | [q90](https://duoke360.com/tutorial/interview/q90)   |
+| Go 互斥锁正常模式和饥饿模式的区别？          | 模式切换条件          | [q91](https://duoke360.com/tutorial/interview/q91)   |
+| Go 互斥锁允许自旋的条件？                    | 自旋阈值              | [q92](https://duoke360.com/tutorial/interview/q92)   |
+| Go 读写锁的实现原理？                        | RWMutex 设计          | [q93](https://duoke360.com/tutorial/interview/q93)   |
+| Go 可重入锁如何实现？                        | 设计思路              | [q94](https://duoke360.com/tutorial/interview/q94)   |
+| Go 原子操作有哪些？                          | atomic 包详解         | [q95](https://duoke360.com/tutorial/interview/q95)   |
+| Go 原子操作和锁的区别？                      | 性能与语义            | [q96](https://duoke360.com/tutorial/interview/q96)   |
+| Go goroutine 的底层实现原理？                | 调度与栈管理          | [q97](https://duoke360.com/tutorial/interview/q97)   |
+| Go goroutine 和线程的区别？                  | 轻量级 vs 重线程      | [q98](https://duoke360.com/tutorial/interview/q98)   |
+| Go goroutine 泄露的场景？                    | 泄漏排查              | [q99](https://duoke360.com/tutorial/interview/q99)   |
+| Go 如何查看正在执行的 goroutine 数量？       | 运行时接口            | [q100](https://duoke360.com/tutorial/interview/q100) |
+| Go 如何控制并发的 goroutine 数量？           | 并发限制              | [q101](https://duoke360.com/tutorial/interview/q101) |
+| 题目：Go 线程实现模型？                      | GMP/GM 架构           | [q102](https://duoke360.com/tutorial/interview/q102) |
+| Go GMP 和 GM 模型？                          | 模型对比              | [q103](https://duoke360.com/tutorial/interview/q103) |
+| Go 调度原理？                                | 调度核心              | [q104](https://duoke360.com/tutorial/interview/q104) |
+| Go work stealing 机制？                      | 负载均衡策略          | [q105](https://duoke360.com/tutorial/interview/q105) |
+| Go hand off 机制？                           | 抢占实现              | [q106](https://duoke360.com/tutorial/interview/q106) |
+| Go 抢占式调度？                              | 抢占策略              | [q107](https://duoke360.com/tutorial/interview/q107) |
+| Go 如何查看运行时调度信息？                  | 诊断工具              | [q108](https://duoke360.com/tutorial/interview/q108) |
+
+------
+
+
+
+# Golang综合项目实战（一）
+
+## 一、🔍 项目概览与架构
+
+| 教程内容       | 简要说明                             | 链接                                                         |
+| -------------- | ------------------------------------ | ------------------------------------------------------------ |
+| 项目简介与架构 | 项目功能介绍，术语解释，运行效果演示 | [项目简介](https://duoke360.com/tutorial/project1/project-intro) |
+| 项目初始化     | 搭建项目骨架，准备好基本结构         | [初始化项目](https://duoke360.com/tutorial/project1/init-project) |
+
+## 二、⚙️ 模型与工具类
+
+| 教程内容           | 简要说明                   | 链接                                                         |
+| ------------------ | -------------------------- | ------------------------------------------------------------ |
+| 用户模型与错误处理 | 定义用户实体及相关错误处理 | [用户模型](https://duoke360.com/tutorial/project1/user-model) |
+| 密码加密工具类     | 封装密码加密与验证         | [密码加密](https://duoke360.com/tutorial/project1/passwd-crypt) |
+| 用户名验证工具类   | 处理用户名的校验逻辑       | [用户名验证](https://duoke360.com/tutorial/project1/validation) |
+| 分页工具类         | 实现通用分页功能           | [分页工具](https://duoke360.com/tutorial/project1/pagination) |
+| CSV 解析工具类     | 简化 CSV 文件的读取与解析  | [CSV 解析](https://duoke360.com/tutorial/project1/csv-helper) |
+| API 响应辅助类     | 统一API响应格式，处理错误  | [API 响应](https://duoke360.com/tutorial/project1/api-helper) |
+| JWT 工具类         | 处理用户身份验证和令牌生成 | [JWT 工具](https://duoke360.com/tutorial/project1/jwt-helper) |
+
+## 三、🔧 业务逻辑与服务层
+
+| 教程内容             | 简要说明                         | 链接                                                         |
+| -------------------- | -------------------------------- | ------------------------------------------------------------ |
+| 商品分类与数据库操作 | 创建商品分类模型，封装数据库操作 | [商品分类](https://duoke360.com/tutorial/project1/category-model) |
+| 商品分类服务         | 实现商品分类的业务逻辑           | [商品分类服务](https://duoke360.com/tutorial/project1/category-service) |
+| 商品模型与服务       | 定义商品模型和相应的业务操作     | [商品服务](https://duoke360.com/tutorial/project1/product-service) |
+| 购物车模型与服务     | 设计购物车功能，处理相关操作     | [购物车服务](https://duoke360.com/tutorial/project1/cart-service) |
+| 订单模型与数据库操作 | 处理订单相关的数据库操作         | [订单项操作](https://duoke360.com/tutorial/project1/order-item-repository) |
+| 订单服务             | 提供订单相关的业务逻辑           | [订单服务](https://duoke360.com/tutorial/project1/order-service) |
+
+## 四、🔧 控制器与中间件
+
+| 教程内容           | 简要说明                   | 链接                                                         |
+| ------------------ | -------------------------- | ------------------------------------------------------------ |
+| 用户控制器         | 处理用户相关的请求和响应   | [用户控制器](https://duoke360.com/tutorial/project1/user-controller) |
+| 商品控制器         | 管理商品的路由和请求       | [商品控制器](https://duoke360.com/tutorial/project1/category-controller) |
+| 购物车与订单控制器 | 分别处理购物车与订单的逻辑 | [订单控制器](https://duoke360.com/tutorial/project1/order-controller) |
+| 授权中间件         | 实现 JWT 身份验证功能      | [授权中间件](https://duoke360.com/tutorial/project1/middleware) |
+
+## 五、⚙️ 项目启动与文档生成
+
+| 教程内容       | 简要说明                                | 链接                                                         |
+| -------------- | --------------------------------------- | ------------------------------------------------------------ |
+| 优雅关闭服务器 | 捕获退出信号，实现平滑下线              | [优雅关闭](https://duoke360.com/tutorial/project1/graceful-showdown) |
+| 项目主启动类   | 启动项目并进行环境测试                  | [启动类](https://duoke360.com/tutorial/project1/main)        |
+| Swagger 配置   | 自动生成API文档，方便接口测试与文档输出 | [Swagger 配置](https://duoke360.com/tutorial/project1/swagger-gen) |
+
+## 📚 推荐学习路径
+
+1. **基础阶段** ▶ 理解项目整体架构 → 熟悉项目模型与工具类 → 掌握业务逻辑与服务层
+2. **开发阶段** ▶ 实现控制器与中间件 → 完成项目启动与运行 → 测试 API 与优化性能
+3. **进阶阶段** ▶ 集成 Swagger 文档 → 处理系统部署与上线 → 优化服务性能
+
+
+
+好的，以下是《Golang项目实战（三）》的完整教程导航目录，已按照你提供的格式整理，包括章节标题、教程内容、简要说明与链接文字：
+
+------
+
+# Golang大型微服务电商项目
+
+------
+
+## 一、📚 项目概览
+
+| 教程内容     | 简要说明                   | 链接                                                         |
+| ------------ | -------------------------- | ------------------------------------------------------------ |
+| 项目简介     | 本项目介绍与功能概述       | [项目简介](https://duoke360.com/tutorial/project03/project-intro) |
+| 创建项目架构 | 设定项目基础架构与文件结构 | [创建项目架构](https://duoke360.com/tutorial/project03/arch) |
+
+------
+
+## 二、💼 服务与微服务开发
+
+| 教程内容                 | 简要说明                               | 链接                                                         |
+| ------------------------ | -------------------------------------- | ------------------------------------------------------------ |
+| 创建货币服务             | 开发一个货币服务，并设计相关功能       | [创建货币服务](https://duoke360.com/tutorial/project03/currency-service) |
+| 创建货币微服务处理器     | 实现货币服务的具体处理逻辑             | [创建货币微服务处理器](https://duoke360.com/tutorial/project03/currencyservice-handler) |
+| 将货币微服务注册到Consul | 配置并将货币微服务注册到Consul服务管理 | [将货币微服务注册到consul](https://duoke360.com/tutorial/project03/currencyservice-regist-to-consul) |
+| 下载安装Consul并发布服务 | 配置Consul，发布微服务到服务注册中心   | [下载安装consul并发布服务](https://duoke360.com/tutorial/project03/install-consul) |
+
+------
+
+## 三、🛍️ 商品与购物车微服务
+
+| 教程内容                   | 简要说明                           | 链接                                                         |
+| -------------------------- | ---------------------------------- | ------------------------------------------------------------ |
+| 创建商品微服务             | 开发商品微服务，实现基本商品功能   | [创建商品微服务](https://duoke360.com/tutorial/project03/productservice) |
+| 准备商品数据文件           | 准备商品数据并用于微服务的数据操作 | [准备商品数据文件](https://duoke360.com/tutorial/project03/product-data-file) |
+| 创建商品微服务处理器       | 编写商品微服务的处理逻辑           | [创建商品微服务处理器](https://duoke360.com/tutorial/project03/productservice-handler) |
+| 将商品微服务注册到Consul   | 将商品微服务注册到Consul进行管理   | [将商品微服务注册到consul](https://duoke360.com/tutorial/project03/productservice-regist-consul) |
+| 发布商品微服务             | 完成商品微服务的发布操作           | [发布商品微服务](https://duoke360.com/tutorial/project03/publish-productservice) |
+| 创建购物车微服务           | 开发购物车微服务并设计购物车功能   | [创建购物车微服务](https://duoke360.com/tutorial/project03/cartservice) |
+| 创建购物车实现逻辑         | 编写购物车服务的具体实现           | [创建购物车实现逻辑](https://duoke360.com/tutorial/project03/cartservice-logic) |
+| 创建购物车微服务处理器     | 设计购物车微服务处理器逻辑         | [创建购物车微服务处理器](https://duoke360.com/tutorial/project03/cartservice-handler) |
+| 将购物车微服务注册到Consul | 将购物车微服务注册到Consul管理中心 | [将购物车微服务注册到consul](https://duoke360.com/tutorial/project03/cartservice-consul) |
+| 发布购物车微服务           | 发布购物车微服务到微服务平台       | [发布购物车微服务](https://duoke360.com/tutorial/project03/publish-cartservice) |
+
+------
+
+## 四、📢 广告与邮件微服务
+
+| 教程内容                 | 简要说明                         | 链接                                                         |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------ |
+| 创建广告微服务           | 创建广告微服务并定义相关功能     | [创建广告微服务](https://duoke360.com/tutorial/project03/adservice) |
+| 创建广告微服务处理器     | 编写广告服务的处理器逻辑         | [创建广告微服务处理器](https://duoke360.com/tutorial/project03/adservice-handler) |
+| 将广告微服务注册到Consul | 将广告微服务注册到Consul服务管理 | [将购广告微服务注册到consul](https://duoke360.com/tutorial/project03/regist-adservice) |
+| 发布广告微服务           | 发布广告微服务到微服务平台       | [发布广告微服务](https://duoke360.com/tutorial/project03/publish-adservice) |
+| 创建邮件微服务           | 创建邮件微服务并设计相关功能     | [创建邮件微服务](https://duoke360.com/tutorial/project03/emailservice) |
+| 创建邮件微服务处理器     | 编写邮件服务的处理器逻辑         | [创建邮件微服务处理器](https://duoke360.com/tutorial/project03/emailservice-handler) |
+| 将邮件微服务注册到Consul | 将邮件微服务注册到Consul进行管理 | [将购邮件微服务注册到consul](https://duoke360.com/tutorial/project03/email-consul) |
+| 发布邮件微服务           | 发布邮件微服务到微服务平台       | [发布邮件微服务](https://duoke360.com/tutorial/project03/publish-emailservice) |
+
+------
+
+## 五、💳 付款与配送微服务
+
+| 教程内容                 | 简要说明                         | 链接                                                         |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------ |
+| 创建付款微服务           | 创建并设计付款微服务             | [创建付款微服务](https://duoke360.com/tutorial/project03/paymentservice) |
+| 创建付款微服务处理器     | 编写付款服务的处理器逻辑         | [创建付款微服务处理器](https://duoke360.com/tutorial/project03/paymentservice-handler) |
+| 将付款微服务注册到Consul | 将付款微服务注册到Consul服务管理 | [将付款微服务注册到consul](https://duoke360.com/tutorial/project03/paymentservice-consul) |
+| 发布付款微服务           | 发布付款微服务到微服务平台       | [发布付款微服务](https://duoke360.com/tutorial/project03/publish-paymentservice) |
+| 创建配送微服务           | 创建并设计配送微服务             | [创建配送微服务](https://duoke360.com/tutorial/project03/shippingservice) |
+| 创建配送微服务处理器     | 编写配送服务的处理器逻辑         | [创建配送微服务处理器](https://duoke360.com/tutorial/project03/shippingservice-handler) |
+| 将配送微服务注册到Consul | 将配送微服务注册到Consul进行管理 | [将配送微服务注册到consul](https://duoke360.com/tutorial/project03/regist-shippingservice) |
+| 发布配送微服务           | 发布配送微服务到微服务平台       | [发布配送微服务](https://duoke360.com/tutorial/project03/publish-shippingservice) |
+
+------
+
+## 六、📦 推荐与结算微服务
+
+| 教程内容                 | 简要说明                         | 链接                                                         |
+| ------------------------ | -------------------------------- | ------------------------------------------------------------ |
+| 创建推荐微服务           | 创建推荐微服务并设计相关功能     | [创建推荐微服务](https://duoke360.com/tutorial/project03/recommendationservice) |
+| 创建推荐微服务处理器     | 编写推荐服务的处理器逻辑         | [创建推荐微服务处理器](https://duoke360.com/tutorial/project03/recommendationservice-handler) |
+| 将推荐微服务注册到Consul | 将推荐微服务注册到Consul服务管理 | [将推荐微服务注册到consul](https://duoke360.com/tutorial/project03/regist-recommendationservice) |
+| 发布推荐微服务           | 发布推荐微服务到微服务平台       | [发布推荐微服务](https://duoke360.com/tutorial/project03/publish-recommendationservice) |
+| 创建结算微服务           | 创建并设计结算微服务             | [创建结算微服务](https://duoke360.com/tutorial/project03/checkoutservice) |
+| 创建结算货币处理模块     | 编写结算货币的处理逻辑           | [创建结算货币处理模块](https://duoke360.com/tutorial/project03/checkoutservice-money) |
+| 创建结算微服务处理器     | 编写结算服务的处理器逻辑         | [创建结算微服务处理器](https://duoke360.com/tutorial/project03/checkoutservice-handler) |
+| 将结算微服务注册到Consul | 将结算微服务注册到Consul进行管理 | [将结算微服务注册到consul](https://duoke360.com/tutorial/project03/regist-checkoutservice) |
+| 发布结算微服务           | 发布结算微服务到微服务平台       | [发布结算微服务](https://duoke360.com/tutorial/project03/publish-checkoutservice) |
+
+------
+
+## 七、💻 前端开发与微服务整合
+
+| 教程内容                   | 简要说明                          | 链接                                                         |
+| -------------------------- | --------------------------------- | ------------------------------------------------------------ |
+| 前端微服务                 | 搭建前端微服务基础结构            | [前端微服务](https://duoke360.com/tutorial/project03/frontend) |
+| 前端货币转换工具类         | 提供货币转换功能的前端工具类      | [前端货币转换工具类](https://duoke360.com/tutorial/project03/frontend-money) |
+| 创建中间件                 | 实现前端请求中间件逻辑            | [创建中间件](https://duoke360.com/tutorial/project03/frontend-middleware) |
+| 创建RPC调用工具类          | 创建用于微服务通信的前端RPC工具类 | [创建rpc调用工具类](https://duoke360.com/tutorial/project03/frontend-rpc) |
+| 创建处理器Handler          | 编写前端逻辑处理器                | [创建处理器handler](https://duoke360.com/tutorial/project03/frontend-handler) |
+| 创建前端主启动类           | 创建并启动前端主服务类            | [创建前端主启动类](https://duoke360.com/tutorial/project03/frontend-main) |
+| 配置前端项目模板和静态资源 | 配置模板文件与静态资源路径        | [配置前端项目模板和静态资源](https://duoke360.com/tutorial/project03/frontend-tmp-static) |
+| 启动前端测试项目           | 启动项目并进行前端微服务功能测试  | [启动前端测试项目](https://duoke360.com/tutorial/project03/test-project) |
+
